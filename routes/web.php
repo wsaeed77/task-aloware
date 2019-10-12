@@ -14,3 +14,13 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::get('blog-post','CommentController@index');
+
+Route::get('comments/{parent_id}','CommentController@comments');
+
+
+Route::post('save-comment','CommentController@store');
+
+
