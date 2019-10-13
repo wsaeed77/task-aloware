@@ -22,9 +22,7 @@
                     </div>
 
                 </div>
-                <div v-if="comment.reply">
-                    <replies :data="comment.commentid"></replies>
-                </div>
+
                 <!-- From -->
                 <div class="comment-form comment-v" v-if="commentBoxs[index]">
 
@@ -56,6 +54,9 @@
 
                     </form>
 
+                </div>
+                <div v-if="comment.reply">
+                    <replies :data="comment.commentid"></replies>
                 </div>
 
             </div>

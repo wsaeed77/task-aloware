@@ -2020,6 +2020,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: {
     data: Number
@@ -37557,14 +37558,6 @@ var render = function() {
                 ])
               ]),
               _vm._v(" "),
-              comment.reply
-                ? _c(
-                    "div",
-                    [_c("replies", { attrs: { data: comment.commentid } })],
-                    1
-                  )
-                : _vm._e(),
-              _vm._v(" "),
               _vm.commentBoxs[index]
                 ? _c("div", { staticClass: "comment-form comment-v" }, [
                     _c(
@@ -37650,6 +37643,14 @@ var render = function() {
                       ]
                     )
                   ])
+                : _vm._e(),
+              _vm._v(" "),
+              comment.reply
+                ? _c(
+                    "div",
+                    [_c("replies", { attrs: { data: comment.commentid } })],
+                    1
+                  )
                 : _vm._e()
             ])
           ])
